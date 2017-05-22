@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Adm.master.cs" Inherits="Noticias.Adm.Site_Adm" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+
+        <asp:HyperLink ID="linkInicio" runat="server" NavigateUrl="../Adm/Inicio.aspx" Text="Inicio"/>
+        <asp:HyperLink ID="linkCategoria" runat="server" NavigateUrl="../Adm/Categoria.aspx" Text="Categoria" />
+        <asp:HyperLink ID="linkNoticia" runat="server" NavigateUrl="../Adm/Noticia.aspx" Text="Notícia" />
+        <asp:HyperLink ID="linkUsuario" runat="server" NavigateUrl="../Adm/Usuario.aspx" Text="Usuário" />
+        <asp:LinkButton ID="btnSair" runat="server" Text="Sair" OnClick="btnSair_Click" />
+        
+        <br /><hr /><br />
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
